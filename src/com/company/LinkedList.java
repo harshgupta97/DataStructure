@@ -137,10 +137,11 @@ public class LinkedList {
         int distance = k - 1;
         var a = first;
         var b = first;
-        for(int i = 0; i < distance; i++)
+        for(int i = 0; i < distance; i++) {
             b = b.next;
-        if(b == null) {
-            throw new IllegalArgumentException();
+            if (b == null) {
+                throw new IllegalArgumentException();
+            }
         }
         while(b != last) {
             a = a.next;
